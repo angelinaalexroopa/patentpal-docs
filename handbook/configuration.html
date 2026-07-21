@@ -10,29 +10,29 @@
       
       
       
-        <link rel="canonical" href="https://angelinaalexroopa.github.io/patentpal-docs/adr/0012-oidc-sso/">
+      
+        <link rel="prev" href="../deploy-guide/data-flow-and-security.html">
       
       
-        <link rel="prev" href="../0009-standalone-first-packaging/">
-      
+        <link rel="next" href="../adr/0004-triage-score-not-legal-opinion.html">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>SSO / OIDC (ADR 0012) - PatentPal — Customer Docs</title>
+        <title>Configuration reference - PatentPal — Customer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#12-sso-oidc-only-one-identity-provider-per-org-jit-provisioning" class="md-skip">
+        <a href="#configuration-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SSO / OIDC (ADR 0012)
+              Configuration reference
             
           </span>
         </div>
@@ -223,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../customer-home.html" class="md-tabs__link">
         
   
   
@@ -244,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../deploy-guide/" class="md-tabs__link">
+        <a href="../deploy-guide/index.html" class="md-tabs__link">
           
   
   
@@ -262,9 +262,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../../handbook/configuration/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="configuration.html" class="md-tabs__link">
         
   
   
@@ -281,13 +283,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../0004-triage-score-not-legal-opinion/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -353,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../customer-home.html" class="md-nav__link">
         
   
   
@@ -411,7 +411,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../deploy-guide/" class="md-nav__link ">
+            <a href="../deploy-guide/index.html" class="md-nav__link ">
               
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/standalone/" class="md-nav__link">
+      <a href="../deploy-guide/standalone.html" class="md-nav__link">
         
   
   
@@ -483,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/compose-and-kubernetes/" class="md-nav__link">
+      <a href="../deploy-guide/compose-and-kubernetes.html" class="md-nav__link">
         
   
   
@@ -511,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/fully-local/" class="md-nav__link">
+      <a href="../deploy-guide/fully-local.html" class="md-nav__link">
         
   
   
@@ -539,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/data-flow-and-security/" class="md-nav__link">
+      <a href="../deploy-guide/data-flow-and-security.html" class="md-nav__link">
         
   
   
@@ -571,10 +571,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../handbook/configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="configuration.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -590,6 +617,114 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm-and-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLM and embeddings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search providers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sso-oidc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSO (OIDC)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standalone-image-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standalone image only
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -598,10 +733,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -615,22 +748,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -648,7 +778,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -666,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0004-triage-score-not-legal-opinion/" class="md-nav__link">
+      <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-nav__link">
         
   
   
@@ -694,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../0009-standalone-first-packaging/" class="md-nav__link">
+      <a href="../adr/0009-standalone-first-packaging.html" class="md-nav__link">
         
   
   
@@ -719,37 +849,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SSO / OIDC (ADR 0012)
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../adr/0012-oidc-sso.html" class="md-nav__link">
         
   
   
@@ -765,70 +868,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#status" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Status
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Context
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decision
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consequences" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Consequences
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -868,10 +907,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#status" class="md-nav__link">
+  <a href="#required" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Status
+        Required
       
     </span>
   </a>
@@ -879,10 +918,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
+  <a href="#llm-and-embeddings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Context
+        LLM and embeddings
       
     </span>
   </a>
@@ -890,10 +929,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
+  <a href="#search-providers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Decision
+        Search providers
       
     </span>
   </a>
@@ -901,10 +940,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#consequences" class="md-nav__link">
+  <a href="#email" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consequences
+        Email
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sso-oidc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSO (OIDC)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standalone-image-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standalone image only
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other
       
     </span>
   </a>
@@ -931,125 +1014,229 @@
   
 
 
-<h1 id="12-sso-oidc-only-one-identity-provider-per-org-jit-provisioning">12. SSO: OIDC only, one identity provider per org, JIT provisioning<a class="headerlink" href="#12-sso-oidc-only-one-identity-provider-per-org-jit-provisioning" title="Permanent link">&para;</a></h1>
-<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
-<p>Accepted</p>
-<h2 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
-<p>ADR 0010 explicitly deferred SSO "until a real customer names an identity
-provider to federate to." That's now the top blocking item on the roadmap's
-"first design-partner pilot needs" list - password accounts alone aren't
-enough once a real customer's IT/security team is in the loop.</p>
-<h2 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>OIDC only, not SAML.</strong> Authorization Code + PKCE covers the identity
-  providers a pilot customer is actually likely to name - Okta, Google
-  Workspace, Azure Entra, Auth0 - with far less code and attack surface than
-  SAML. SAML/WorkOS stays a documented, deferred option if a specific
-  customer's IdP demands it; nothing here forecloses adding it later behind
-  the same <code>OrgSsoConfigStore</code> shape.</li>
-<li><strong>No new heavy dependency.</strong> <code>pyjwt[crypto]</code> (already a dependency, extended
-  with the <code>cryptography</code> extra for RS256/ES256 verification) plus <code>httpx</code>
-  (already used by every search provider) implement the whole flow -
-  discovery, PKCE, token exchange, <code>id_token</code> verification via
-  <code>PyJWKClient</code>. No <code>authlib</code>.</li>
-<li><strong>One identity provider per org</strong>, not multi-IdP or a WorkOS-style
-  aggregator. <code>org_sso_config</code> is a single row per <code>org_id</code> (migration 0012).
-  <code>allowed_email_domain</code> is globally unique across orgs - it's the only thing
-  <code>/auth/sso/login</code> has to resolve an org from, given nothing but the email a
-  user types in (no separate per-tenant login URL to remember or bookmark).</li>
-<li><strong>Just-in-time provisioning, no SCIM.</strong> The first successful SSO login for
-  an email in the allowed domain auto-creates a <code>MEMBER</code> account with
-  <code>email_verified_at</code> set immediately - the IdP already vouched for the
-  email, so there's no reason to re-run this codebase's own verify-link flow
-  on top of it. SCIM (provisioning/deprovisioning driven by the IdP, not by
-  login) stays on the roadmap as later work; JIT alone means an employee
-  removed from the IdP can still use an existing session until it expires
-  (<code>AUTH_TOKEN_TTL_HOURS</code>), same revocation trade-off ADR 0010 already
-  accepted for password accounts.</li>
-<li><strong>Session issuance is unchanged.</strong> <code>/auth/sso/callback</code> calls the exact
-  same <code>issue_token()</code> the password login path uses, producing the same
-  <code>AuthClaims</code> shape. Nothing downstream of "there is a valid session JWT" -
-  every other endpoint, the whole web app - needed to change at all.</li>
-<li><strong>No server-side session store</strong>, matching ADR 0010's stateless-JWT
-  approach: the PKCE <code>code_verifier</code> and OIDC <code>nonce</code> have to survive the
-  redirect round trip to the IdP and back, so they're carried inside a
-  short-lived (10 min), signed JWT handed to the IdP as the opaque <code>state</code>
-  parameter (<code>SsoState</code> / <code>issue_sso_state_token</code> in <code>auth.py</code>) rather than
-  kept in a session table.</li>
-<li><strong><code>users.password_hash</code> is now nullable</strong>; a new <code>users.sso_subject</code>
-  column holds the IdP's <code>sub</code> claim, unique per <code>(org_id, sso_subject)</code>. A
-  <code>CHECK</code> constraint (migration 0012) requires at least one of
-  <code>password_hash</code>/<code>sso_subject</code> to be set - enforced at the database level,
-  not just in the Pydantic model, so a bug anywhere upstream can't insert a
-  user with no way to authenticate at all.</li>
-<li><strong>Existing password accounts link automatically on first SSO login</strong>: if
-  an email already has a password-based account in the target org,
-  <code>/auth/sso/callback</code> attaches the IdP's <code>sub</code> to that same row rather than
-  creating a duplicate. An email that belongs to a <em>different</em> org is
-  rejected (409) - <code>get_by_email</code>'s global uniqueness already guarantees
-  there's at most one such row to find.</li>
-<li><strong><code>/auth/sso/callback</code> hands the browser a bare token, not a session.</strong> It's
-  a redirect (<code>/sso-callback#token=...</code>, a URL fragment so the token never
-  lands in a server access log), not a fetch response, so it can't return the
-  full <code>AuthResponse</code> body the password login/register endpoints do. A new
-  <code>GET /auth/me</code> (any valid bearer token, returns the same session fields
-  minus the token itself) lets the frontend turn "I have a token" into a full
-  <code>Session</code> without minting a second one.</li>
-<li><strong><code>login_hint</code> is passed to the authorization URL</strong> (a standard OIDC
-  param, not our invention) - the email the user already typed into the login
-  form pre-fills the IdP's own login screen. Real IdPs still make the user
-  authenticate; it's a convenience, not a trust boundary - <code>/auth/sso/callback</code>
-  never trusts anything about <em>who</em> logged in except the verified <code>id_token</code>.</li>
-</ul>
-<h2 id="consequences">Consequences<a class="headerlink" href="#consequences" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong><code>client_secret</code> is stored as plaintext</strong> in <code>org_sso_config</code> today - a
-  real gap for a security review to flag, not an oversight. Every other
-  secret in this codebase (<code>ANTHROPIC_API_KEY</code>, <code>SMTP_PASSWORD</code>, ...) lives
-  in an env var scoped to one deployment; this is the first secret that's
-  both per-tenant and DB-resident, which is a different threat model
-  (database access exposes every configured org's IdP credential at once).
-  Application-level encryption at rest is the natural fast-follow, not done
-  here to keep this phase scoped to the OIDC flow itself.</li>
-<li>The <code>id_token</code>'s signature is verified against asymmetric algorithms only
-  (<code>RS256</code>/<code>ES256</code>) - <code>HS256</code>/<code>none</code> are explicitly excluded in
-  <code>oidc.verify_id_token</code>, since accepting a symmetric algorithm for a token
-  signed by a third party would open an algorithm-confusion forgery path.</li>
-<li>SSO login is public/unauthenticated by construction - it's how a user
-  authenticates in the first place. <code>/auth/sso/login</code> confirms only that an
-  org has SSO configured for a domain (a fairly standard disclosure - Okta,
-  Slack, and others do the same "enter your email to find your workspace"
-  pattern); <code>/auth/sso/callback</code> independently re-checks the returned
-  <code>id_token</code>'s email domain against the configured <code>allowed_email_domain</code>
-  rather than trusting the earlier resolution, since a misconfigured or
-  compromised IdP could otherwise hand back an out-of-domain identity.</li>
-<li><strong><code>PUBLIC_APP_BASE_URL</code> has to be listed explicitly in <code>docker-compose.yml</code>'s
-  <code>api.environment</code> block</strong>, not just set in <code>.env.local</code> - <code>--env-file</code> only
-  drives variable <em>substitution</em> inside <code>docker-compose.yml</code> (the <code>${VAR}</code>
-  syntax), it does not automatically forward every <code>.env.local</code> entry into the
-  container's process environment. Missing this the first time round produced
-  a silent, hard-to-diagnose failure: <code>_public_app_base_url()</code> correctly
-  raised <code>HTTPException(500, ...)</code>, but Starlette doesn't log a traceback for
-  deliberate <code>HTTPException</code>s (only genuinely unhandled exceptions get one),
-  so the API logs showed nothing but a bare <code>500</code> with no explanation. Worth
-  remembering for the next env var that only some services need.</li>
-<li><strong>e2e testing runs against a real local OIDC provider</strong>
-  (<code>web/e2e/fake-idp.ts</code>), not a mocked transport - real discovery, real PKCE
-  verification, a real RS256-signed <code>id_token</code> checked against a real JWKS,
-  same "no mocked providers" bar as the rest of this suite. Identity comes
-  from <code>login_hint</code> rather than a test-only side channel. It also surfaced a
-  second local-dev-only networking wrinkle worth knowing: the API runs in a
-  Docker container while the browser and the fake IdP run on the host, and
-  Docker Desktop's <code>host.docker.internal</code> (container → host) and <code>127.0.0.1</code>
-  (host → host) are <em>not</em> interchangeable - the fake IdP's discovery document
-  hands out a <code>host.docker.internal</code> issuer/token/jwks trio (server-to-server,
-  API-only calls) alongside a <code>127.0.0.1</code> <code>authorization_endpoint</code> (the only
-  endpoint the browser itself ever navigates to). Nothing about this is
-  specific to the fake IdP; a real IdP wouldn't have this problem since it's
-  reachable at one public hostname from anywhere.</li>
-<li>Still open, not addressed by this ADR: SCIM/deprovisioning, SAML, multiple
-  IdPs per org, and <code>client_secret</code> encryption at rest.</li>
-</ul>
+<h1 id="configuration-reference">Configuration reference<a class="headerlink" href="#configuration-reference" title="Permanent link">&para;</a></h1>
+<p>Every environment variable the application reads, grouped by concern. <code>.env.example</code> in the repo
+root is the canonical, always-current template — copy it to <code>.env.local</code> and fill in what you
+need; this page explains the <em>why</em> behind each group.</p>
+<p>An entry in <code>.env.local</code> reaches a process only if the launcher forwards it. <code>docker run
+--env-file</code> forwards the file; the root development <code>docker-compose.yml</code> explicitly lists each
+variable per service. In particular, it forwards <code>OPENROUTER_*</code> to the worker but does not yet
+forward <code>LLM_*</code> BYO-endpoint or SMTP settings. Update the service environment or use the
+standalone image when exercising those paths.</p>
+<h2 id="required">Required<a class="headerlink" href="#required" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Required for</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DATABASE_URL</code></td>
+<td>everything</td>
+<td>Postgres connection string</td>
+</tr>
+<tr>
+<td><code>AUTH_JWT_SECRET</code></td>
+<td><code>services/api</code></td>
+<td>signs/verifies session tokens; the API refuses to start without it. Generate with <code>python3 -c "import secrets; print(secrets.token_hex(32))"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="llm-and-embeddings">LLM and embeddings<a class="headerlink" href="#llm-and-embeddings" title="Permanent link">&para;</a></h2>
+<p>Three ways to get an <code>LLMProvider</code>, checked in this order: a custom <code>LLM_BASE_URL</code>, OpenRouter,
+then Anthropic direct.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ANTHROPIC_API_KEY</code></td>
+<td>default backend: Anthropic direct</td>
+</tr>
+<tr>
+<td><code>VOYAGE_API_KEY</code></td>
+<td>default embeddings backend</td>
+</tr>
+<tr>
+<td><code>VOYAGE_REQUESTS_PER_MINUTE</code>, <code>VOYAGE_MAX_BATCH_SIZE</code>, <code>VOYAGE_MAX_TOKENS_PER_BATCH</code></td>
+<td>override Voyage's conservative free-tier pacing once a payment method is on file</td>
+</tr>
+<tr>
+<td><code>OPENROUTER_API_KEY</code></td>
+<td>routes reasoner/worker calls through OpenRouter instead</td>
+</tr>
+<tr>
+<td><code>OPENROUTER_REASONER_MODEL</code>, <code>OPENROUTER_WORKER_MODEL</code></td>
+<td>required alongside the key above — exact model slugs are never guessed; either may be a comma-separated fallback chain</td>
+</tr>
+<tr>
+<td><code>OPENROUTER_EMBEDDING_MODEL</code></td>
+<td>opts embeddings into OpenRouter too (not triggered by <code>OPENROUTER_API_KEY</code> alone)</td>
+</tr>
+<tr>
+<td><code>LLM_BASE_URL</code></td>
+<td><strong>BYO-LLM</strong> — takes precedence over everything above; points the OpenAI-compatible client at your own endpoint (self-hosted vLLM, Azure/Bedrock gateway)</td>
+</tr>
+<tr>
+<td><code>LLM_REASONER_MODEL</code>, <code>LLM_WORKER_MODEL</code></td>
+<td>required alongside <code>LLM_BASE_URL</code></td>
+</tr>
+<tr>
+<td><code>LLM_API_KEY</code></td>
+<td>optional — unauthenticated internal endpoints send no <code>Authorization</code> header at all if unset, rather than a dangling credential</td>
+</tr>
+<tr>
+<td><code>LLM_EMBEDDING_MODEL</code>, <code>LLM_EMBEDDING_BASE_URL</code></td>
+<td>BYO-LLM for embeddings; falls back to <code>LLM_BASE_URL</code> if the base URL isn't given separately</td>
+</tr>
+</tbody>
+</table>
+<h2 id="search-providers">Search providers<a class="headerlink" href="#search-providers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>arXiv and Semantic Scholar work with no key; Semantic Scholar's anonymous tier is aggressively rate-limited, a free key gets a dedicated 1 RPS</td>
+</tr>
+<tr>
+<td><code>SEMANTIC_SCHOLAR_API_KEY</code></td>
+<td>recommended — removes anonymous-tier throttling</td>
+</tr>
+<tr>
+<td><code>DISABLE_SEMANTIC_SCHOLAR_SEARCH</code></td>
+<td>development escape hatch that removes Semantic Scholar from the fan-out; prefer a real key outside local troubleshooting</td>
+</tr>
+<tr>
+<td><code>PATENTSVIEW_API_KEY</code></td>
+<td>adds PatentsView to the fan-out</td>
+</tr>
+<tr>
+<td><code>EPO_OPS_CONSUMER_KEY</code>, <code>EPO_OPS_CONSUMER_SECRET</code></td>
+<td>adds EPO OPS</td>
+</tr>
+<tr>
+<td><code>ENABLE_GOOGLE_PATENTS_SEARCH</code></td>
+<td>opt-in — unofficial, unverified endpoint</td>
+</tr>
+<tr>
+<td><code>LOCAL_CORPUS_SEARCH</code></td>
+<td>adds Postgres FTS over <code>corpus_papers</code> to the fan-out; requires the corpus to be populated via <code>arxiv_sync</code> first. It is additive and does not disable live arXiv/Semantic Scholar.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>unset <code>SMTP_HOST</code> = emails only logged (<code>LoggingEmailSender</code>), not sent — every flow works without real delivery</td>
+</tr>
+<tr>
+<td><code>SMTP_HOST</code>, <code>EMAIL_FROM</code></td>
+<td>required together to enable <code>SmtpEmailSender</code></td>
+</tr>
+<tr>
+<td><code>SMTP_PORT</code></td>
+<td>default 587</td>
+</tr>
+<tr>
+<td><code>SMTP_USERNAME</code>, <code>SMTP_PASSWORD</code></td>
+<td>optional — an internal relay may need no auth</td>
+</tr>
+<tr>
+<td><code>SMTP_STARTTLS</code></td>
+<td>set to <code>0</code> to disable STARTTLS (internal port-25 relays)</td>
+</tr>
+<tr>
+<td><code>SMTP_TLS</code></td>
+<td>set to <code>1</code> for implicit TLS (port-465 style)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sso-oidc">SSO (OIDC)<a class="headerlink" href="#sso-oidc" title="Permanent link">&para;</a></h2>
+<p>Per-org configuration lives in the <code>org_sso_config</code> table, not env vars (<a href="../adr/0012-oidc-sso.html">ADR 0012</a>) — an org admin sets it via <code>PUT /org/sso-config</code>. This is the one process-wide setting SSO needs:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PUBLIC_APP_BASE_URL</code></td>
+<td>required if any org has SSO configured — the absolute, single-origin base URL this deployment is reachable at, used to build the OIDC <code>redirect_uri</code> and the post-login redirect back into the app</td>
+</tr>
+</tbody>
+</table>
+<h2 id="observability">Observability<a class="headerlink" href="#observability" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OTEL_EXPORTER_OTLP_ENDPOINT</code></td>
+<td>unset = telemetry is a complete no-op; set = metrics and traces export over OTLP/HTTP. Queue-depth metrics refresh every 15 seconds.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="standalone-image-only">Standalone image only<a class="headerlink" href="#standalone-image-only" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RUN_WORKER_IN_PROCESS</code></td>
+<td>runs the worker loop as a background task inside the API process instead of a separate <code>services/worker</code> process</td>
+</tr>
+<tr>
+<td><code>WEB_DIST_DIR</code>, <code>PGDATA</code>, <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code>, <code>POSTGRES_DB</code></td>
+<td>set by the Dockerfile itself; see the <a href="../deploy-guide/standalone.html">standalone guide</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other">Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MIGRATIONS_DIR</code></td>
+<td>override where <code>run_migrations</code> looks for <code>.sql</code> files (defaults to <code>deploy/migrations</code>)</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1105,10 +1292,10 @@ enough once a real customer's IT/security team is in the loop.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

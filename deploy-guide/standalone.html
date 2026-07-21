@@ -10,31 +10,29 @@
       
       
       
-        <link rel="canonical" href="https://angelinaalexroopa.github.io/patentpal-docs/deploy-guide/compose-and-kubernetes/">
+      
+        <link rel="prev" href="index.html">
       
       
-        <link rel="prev" href="../standalone/">
-      
-      
-        <link rel="next" href="../fully-local/">
+        <link rel="next" href="compose-and-kubernetes.html">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Compose & Kubernetes - PatentPal — Customer Docs</title>
+        <title>Standalone quickstart - PatentPal — Customer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#compose-kubernetes" class="md-skip">
+        <a href="#standalone-quickstart" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compose & Kubernetes
+              Standalone quickstart
             
           </span>
         </div>
@@ -225,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../customer-home.html" class="md-tabs__link">
         
   
   
@@ -248,7 +246,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -268,7 +266,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../handbook/configuration/" class="md-tabs__link">
+      <a href="../handbook/configuration.html" class="md-tabs__link">
         
   
   
@@ -289,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../adr/0004-triage-score-not-legal-opinion/" class="md-tabs__link">
+        <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-tabs__link">
           
   
   
@@ -325,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -355,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../customer-home.html" class="md-nav__link">
         
   
   
@@ -418,7 +416,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   
@@ -459,34 +457,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../standalone/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Standalone quickstart
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -506,7 +476,7 @@
   <span class="md-ellipsis">
     
   
-    Compose & Kubernetes
+    Standalone quickstart
   
 
     
@@ -517,14 +487,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="standalone.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Compose & Kubernetes
+    Standalone quickstart
   
 
     
@@ -550,10 +520,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#multi-container-compose" class="md-nav__link">
+  <a href="#build-and-run" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Multi-container (Compose)
+        Build and run
       
     </span>
   </a>
@@ -561,10 +531,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes-helm" class="md-nav__link">
+  <a href="#what-to-put-in-envlocal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kubernetes (Helm)
+        What to put in .env.local
       
     </span>
   </a>
@@ -572,10 +542,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-production-shaped-will-mean-once-built" class="md-nav__link">
+  <a href="#data-persistence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What "production-shaped" will mean once built
+        Data persistence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sizing
       
     </span>
   </a>
@@ -609,7 +590,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../fully-local/" class="md-nav__link">
+      <a href="compose-and-kubernetes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compose & Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fully-local.html" class="md-nav__link">
         
   
   
@@ -637,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-flow-and-security/" class="md-nav__link">
+      <a href="data-flow-and-security.html" class="md-nav__link">
         
   
   
@@ -672,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../handbook/configuration/" class="md-nav__link">
+      <a href="../handbook/configuration.html" class="md-nav__link">
         
   
   
@@ -759,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0004-triage-score-not-legal-opinion/" class="md-nav__link">
+      <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-nav__link">
         
   
   
@@ -787,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0009-standalone-first-packaging/" class="md-nav__link">
+      <a href="../adr/0009-standalone-first-packaging.html" class="md-nav__link">
         
   
   
@@ -815,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0012-oidc-sso/" class="md-nav__link">
+      <a href="../adr/0012-oidc-sso.html" class="md-nav__link">
         
   
   
@@ -870,10 +879,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#multi-container-compose" class="md-nav__link">
+  <a href="#build-and-run" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Multi-container (Compose)
+        Build and run
       
     </span>
   </a>
@@ -881,10 +890,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes-helm" class="md-nav__link">
+  <a href="#what-to-put-in-envlocal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kubernetes (Helm)
+        What to put in .env.local
       
     </span>
   </a>
@@ -892,10 +901,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-production-shaped-will-mean-once-built" class="md-nav__link">
+  <a href="#data-persistence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What "production-shaped" will mean once built
+        Data persistence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sizing
       
     </span>
   </a>
@@ -933,59 +953,70 @@
   
 
 
-<h1 id="compose-kubernetes">Compose &amp; Kubernetes<a class="headerlink" href="#compose-kubernetes" title="Permanent link">&para;</a></h1>
-<p>For anything beyond a single-container pilot — separate API/worker scaling, an external managed
-Postgres, or a Kubernetes-native rollout.</p>
-<div class="admonition note">
-<p class="admonition-title">The productized packaging for these paths isn't built yet</p>
-<p><code>deploy/compose/</code> and <code>deploy/helm/</code> exist as placeholders in the repo today — the actual
-multi-container compose file and Helm chart are on the roadmap under "Private-deployment
-additions," not yet implemented. What follows is the current, honest state of each path: what
-exists, what you'd build on top of it, and what's still open.</p>
-</div>
-<h2 id="multi-container-compose">Multi-container (Compose)<a class="headerlink" href="#multi-container-compose" title="Permanent link">&para;</a></h2>
-<p>The root <a href="https://github.com/rnalex/ip-workflow/blob/main/docker-compose.yml"><code>docker-compose.yml</code></a>
-is this project's own <strong>development</strong> setup — <code>api</code>, <code>worker</code>, <code>db</code>, and <code>otel-lgtm</code> as separate
-containers against an external (not embedded) Postgres:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env.local
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>--env-file<span class="w"> </span>.env.local<span class="w"> </span>up<span class="w"> </span>--build
+<h1 id="standalone-quickstart">Standalone quickstart<a class="headerlink" href="#standalone-quickstart" title="Permanent link">&para;</a></h1>
+<p>The fastest path to a working pilot: one image, one container, no external services. Embedded
+Postgres and the worker both run inside the same process as the API
+(<a href="https://github.com/rnalex/ip-workflow/blob/main/deploy/standalone"><code>deploy/standalone/</code></a>).
+This is the base artifact intended for future BYO-cloud and air-gapped packaging too. Those
+productized tiers are not complete today; they must remain configurations of this artifact rather
+than forks when implemented.</p>
+<h2 id="build-and-run">Build and run<a class="headerlink" href="#build-and-run" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-f<span class="w"> </span>deploy/standalone/Dockerfile<span class="w"> </span>-t<span class="w"> </span>patent-triage-standalone<span class="w"> </span>.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>patent-triage<span class="w"> </span>--env-file<span class="w"> </span>.env.local<span class="w"> </span>-p<span class="w"> </span><span class="m">8000</span>:8000<span class="w"> </span>patent-triage-standalone
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>curl<span class="w"> </span>localhost:8000/health<span class="w">   </span><span class="c1"># {&quot;status&quot;: &quot;ok&quot;}</span>
 </code></pre></div>
-<p>It's a real, working multi-container topology, and everything in it (the API image, the worker
-image, the migration-on-startup behavior) is the same code the standalone image and any future
-production compose packaging would use — but it isn't hardened or documented as a production
-artifact (no resource limits, no restart policies tuned for production, dev-oriented defaults
-throughout). Treat it as a reference for the shape a production compose file would take, not as
-something to point at customer traffic directly.</p>
-<p><code>deploy/compose/</code> is meant to hold the separate, productized version of this — layered on the
-standalone image rather than built from source, with production-appropriate defaults. It's a
-placeholder today.</p>
-<h2 id="kubernetes-helm">Kubernetes (Helm)<a class="headerlink" href="#kubernetes-helm" title="Permanent link">&para;</a></h2>
-<p><code>deploy/helm/</code> is meant to hold the chart for private/air-gapped tiers, including the fully
-air-gapped bundle: a signed OCI archive with images, model weights, and the prior-art corpus,
-sized so a platform team can install it in a day per the roadmap's target. It's a placeholder
-today — no chart exists yet.</p>
-<p>If a Kubernetes deployment is a requirement for your evaluation now, the standalone image is
-still deployable as a single-replica Deployment with a PersistentVolumeClaim for
-<code>/var/lib/postgresql/standalone-data</code> in the interim, at the same single-worker throughput ceiling
-described in the <a href="../standalone/#sizing">standalone guide</a>. This isn't a substitute for the
-planned chart (no external managed-Postgres story, no horizontal worker scaling), but it's a
-reasonable bridge for a pilot.</p>
-<h2 id="what-production-shaped-will-mean-once-built">What "production-shaped" will mean once built<a class="headerlink" href="#what-production-shaped-will-mean-once-built" title="Permanent link">&para;</a></h2>
-<p>Per the roadmap, so you know what to expect and can plan around it:</p>
-<ul>
-<li>External managed Postgres rather than embedded, for the same reasons any production Postgres
-  workload wants a managed instance (backups, PITR, connection pooling at scale).</li>
-<li>API and worker scaled independently — the API is stateless HTTP, the worker is a
-  <code>FOR UPDATE SKIP LOCKED</code> polling loop that can safely run multiple replicas.</li>
-<li>Signed license keys (features/seats/expiry) and versioned releases with automated migrations
-  for the private-deployment tiers.</li>
-<li>A diagnostics bundle (sanitized, never disclosure content) for support without requiring log
-  access to customer infrastructure.</li>
-</ul>
+<p>Open <code>http://localhost:8000/</code> — the API serves the built web app directly, no separate frontend
+deployment.</p>
+<h2 id="what-to-put-in-envlocal">What to put in <code>.env.local</code><a class="headerlink" href="#what-to-put-in-envlocal" title="Permanent link">&para;</a></h2>
+<p>At minimum, credentials for whichever LLM path you're using — see
+<a href="../handbook/configuration.html">Configuration reference</a> for the full set:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span>...
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">VOYAGE_API_KEY</span><span class="o">=</span>...
+</code></pre></div>
+<p>or, to use your own OpenAI-compatible endpoint instead (self-hosted vLLM, an Azure/Bedrock
+gateway):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">LLM_BASE_URL</span><span class="o">=</span>https://your-endpoint/v1
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">LLM_REASONER_MODEL</span><span class="o">=</span>...
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nv">LLM_WORKER_MODEL</span><span class="o">=</span>...
+</code></pre></div>
+<p>If you want SSO (<a href="../adr/0012-oidc-sso.html">ADR 0012</a>), also set <code>PUBLIC_APP_BASE_URL</code> to this
+deployment's actual reachable origin (e.g. <code>https://patent-triage.your-company.example</code>) — the
+API serves the web app itself here, so unlike the split dev setup there's no proxy/origin
+mismatch to worry about, just the real public URL. The rest of an SSO config (issuer, client ID,
+secret, allowed domain) is entered once by an org admin in-app, not an env var.</p>
+<p>Note: <code>docker run --env-file .env.local</code> (used here) really does inject every variable in the
+file into the container's environment — that's different from <code>docker compose --env-file</code>, which
+only uses the file for <code>${VAR}</code> substitution <em>inside</em> <code>docker-compose.yml</code> and still requires
+each variable to be listed explicitly under a service's <code>environment:</code> block (see the
+<a href="compose-and-kubernetes.html">Compose &amp; Kubernetes</a> page, or ADR 0012's Consequences for the bug
+this caused).</p>
+<p>Without either, the container still starts and serves the web app and API — intake and the
+review queue work fine — but the worker's pipeline calls fail per-job rather than crashing the
+process, so submitted disclosures won't progress past intake.</p>
+<h2 id="data-persistence">Data persistence<a class="headerlink" href="#data-persistence" title="Permanent link">&para;</a></h2>
+<p>Postgres runs as a real embedded server (<code>initdb</code> on first boot, not an in-process/emulated
+engine), with its data directory under <code>$PGDATA</code> inside the container's writable layer by
+default. <strong>Mount a volume there</strong>, or data is lost on <code>docker rm</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>patent-triage<span class="w"> </span>--env-file<span class="w"> </span>.env.local<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>-v<span class="w"> </span>patent-triage-data:/var/lib/postgresql/standalone-data<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">8000</span>:8000<span class="w"> </span>patent-triage-standalone
+</code></pre></div>
+<p><code>AUTH_JWT_SECRET</code> behaves the same way: if you don't supply one, the entrypoint generates one at
+boot, but it isn't persisted across restarts of a fresh container — fine for a demo, but supply
+your own explicitly (<code>python3 -c "import secrets; print(secrets.token_hex(32))"</code>) for anything
+where sessions need to survive a restart.</p>
+<h2 id="sizing">Sizing<a class="headerlink" href="#sizing" title="Permanent link">&para;</a></h2>
+<p>There's no published benchmark yet — treat this as a pilot/demo tier for a handful of concurrent
+users, not a sized production recommendation. The worker processes one pipeline job at a time, so
+throughput under load is a single-worker-in-one-container ceiling. Productized Compose/Kubernetes
+packaging is the intended scale-out path, but is not implemented yet; see
+<a href="compose-and-kubernetes.html">Compose &amp; Kubernetes</a>.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../data-flow-and-security/">Data flow &amp; security</a> for the egress picture that matters most for
-  a Kubernetes/air-gap evaluation.</li>
+<li><a href="compose-and-kubernetes.html">Compose &amp; Kubernetes</a> for a multi-container, horizontally-scalable
+  shape.</li>
+<li><a href="data-flow-and-security.html">Data flow &amp; security</a> for what this tier sends outbound and how to
+  reduce it.</li>
 </ul>
 
 
@@ -1042,10 +1073,10 @@ reasonable bridge for a pilot.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

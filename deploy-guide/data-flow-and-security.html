@@ -10,31 +10,29 @@
       
       
       
-        <link rel="canonical" href="https://angelinaalexroopa.github.io/patentpal-docs/handbook/configuration/">
+      
+        <link rel="prev" href="fully-local.html">
       
       
-        <link rel="prev" href="../../deploy-guide/data-flow-and-security/">
-      
-      
-        <link rel="next" href="../../adr/0004-triage-score-not-legal-opinion/">
+        <link rel="next" href="../handbook/configuration.html">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Configuration reference - PatentPal — Customer Docs</title>
+        <title>Data flow & security - PatentPal — Customer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-reference" class="md-skip">
+        <a href="#data-flow-security" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration reference
+              Data flow & security
             
           </span>
         </div>
@@ -225,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../customer-home.html" class="md-tabs__link">
         
   
   
@@ -242,11 +240,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../deploy-guide/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -264,11 +264,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../handbook/configuration.html" class="md-tabs__link">
         
   
   
@@ -289,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../adr/0004-triage-score-not-legal-opinion/" class="md-tabs__link">
+        <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-tabs__link">
           
   
   
@@ -325,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -355,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../customer-home.html" class="md-nav__link">
         
   
   
@@ -379,6 +377,8 @@
       
   
   
+    
+  
   
   
     
@@ -400,20 +400,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../deploy-guide/" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   
@@ -431,13 +434,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -457,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/standalone/" class="md-nav__link">
+      <a href="standalone.html" class="md-nav__link">
         
   
   
@@ -485,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/compose-and-kubernetes/" class="md-nav__link">
+      <a href="compose-and-kubernetes.html" class="md-nav__link">
         
   
   
@@ -513,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy-guide/fully-local/" class="md-nav__link">
+      <a href="fully-local.html" class="md-nav__link">
         
   
   
@@ -538,41 +541,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../deploy-guide/data-flow-and-security/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Data flow & security
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -592,7 +560,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration reference
+    Data flow & security
   
 
     
@@ -603,14 +571,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="data-flow-and-security.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Configuration reference
+    Data flow & security
   
 
     
@@ -636,10 +604,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#required" class="md-nav__link">
+  <a href="#what-calls-out-by-category" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Required
+        What calls out, by category
       
     </span>
   </a>
@@ -647,10 +615,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#llm-and-embeddings" class="md-nav__link">
+  <a href="#the-gap-thats-easy-to-miss-query-egress" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LLM and embeddings
+        The gap that's easy to miss: query egress
       
     </span>
   </a>
@@ -658,10 +626,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#search-providers" class="md-nav__link">
+  <a href="#trust-surface-by-tier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Search providers
+        Trust surface, by tier
       
     </span>
   </a>
@@ -669,54 +637,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#email" class="md-nav__link">
+  <a href="#next" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Email
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sso-oidc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SSO (OIDC)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observability
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#standalone-image-only" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Standalone image only
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other
+        Next
       
     </span>
   </a>
@@ -727,6 +651,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handbook/configuration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -798,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0004-triage-score-not-legal-opinion/" class="md-nav__link">
+      <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-nav__link">
         
   
   
@@ -826,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0009-standalone-first-packaging/" class="md-nav__link">
+      <a href="../adr/0009-standalone-first-packaging.html" class="md-nav__link">
         
   
   
@@ -854,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0012-oidc-sso/" class="md-nav__link">
+      <a href="../adr/0012-oidc-sso.html" class="md-nav__link">
         
   
   
@@ -909,10 +868,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#required" class="md-nav__link">
+  <a href="#what-calls-out-by-category" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Required
+        What calls out, by category
       
     </span>
   </a>
@@ -920,10 +879,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#llm-and-embeddings" class="md-nav__link">
+  <a href="#the-gap-thats-easy-to-miss-query-egress" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LLM and embeddings
+        The gap that's easy to miss: query egress
       
     </span>
   </a>
@@ -931,10 +890,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#search-providers" class="md-nav__link">
+  <a href="#trust-surface-by-tier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Search providers
+        Trust surface, by tier
       
     </span>
   </a>
@@ -942,54 +901,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#email" class="md-nav__link">
+  <a href="#next" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Email
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sso-oidc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SSO (OIDC)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observability
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#standalone-image-only" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Standalone image only
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other
+        Next
       
     </span>
   </a>
@@ -1016,221 +931,133 @@
   
 
 
-<h1 id="configuration-reference">Configuration reference<a class="headerlink" href="#configuration-reference" title="Permanent link">&para;</a></h1>
-<p>Every environment variable the application reads, grouped by concern. <code>.env.example</code> in the repo
-root is the canonical, always-current template — copy it to <code>.env.local</code> and fill in what you
-need; this page explains the <em>why</em> behind each group.</p>
-<h2 id="required">Required<a class="headerlink" href="#required" title="Permanent link">&para;</a></h2>
+<h1 id="data-flow-security">Data flow &amp; security<a class="headerlink" href="#data-flow-security" title="Permanent link">&para;</a></h1>
+<p>Disclosures are pre-filing IP. Expect a security review before any pilot, and expect it to ask
+specifically "what leaves our network, and to whom." This page answers that, per tier, and
+explains the one gap that's easy to miss.</p>
+<h2 id="what-calls-out-by-category">What calls out, by category<a class="headerlink" href="#what-calls-out-by-category" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Required for</th>
-<th>Notes</th>
+<th>Category</th>
+<th>Calls out to</th>
+<th>Controlled by</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>DATABASE_URL</code></td>
-<td>everything</td>
-<td>Postgres connection string</td>
+<td><strong>LLM (Normalize, Assess)</strong></td>
+<td>Anthropic, or your own OpenRouter/self-hosted endpoint</td>
+<td><code>ANTHROPIC_API_KEY</code> vs. <code>LLM_BASE_URL</code> — see <a href="../handbook/configuration.html">Configuration reference</a></td>
 </tr>
 <tr>
-<td><code>AUTH_JWT_SECRET</code></td>
-<td><code>services/api</code></td>
-<td>signs/verifies session tokens (<a href="../adr/0010-authentication.md">ADR 0010</a>); the API refuses to start without it. Generate with <code>python3 -c "import secrets; print(secrets.token_hex(32))"</code></td>
+<td><strong>Embeddings (Evidence map)</strong></td>
+<td>Voyage, or your own endpoint</td>
+<td><code>VOYAGE_API_KEY</code> vs. <code>LLM_EMBEDDING_MODEL</code>/<code>LLM_EMBEDDING_BASE_URL</code></td>
+</tr>
+<tr>
+<td><strong>Prior-art search</strong></td>
+<td>arXiv and Semantic Scholar by default, plus configured PatentsView/EPO or opt-in Google Patents</td>
+<td>Provider configuration; arXiv is always enabled and Semantic Scholar works without a key</td>
+</tr>
+<tr>
+<td><strong>Outbound email</strong></td>
+<td>Whatever SMTP relay you point at (or nowhere, if <code>SMTP_HOST</code> is unset)</td>
+<td><code>SMTP_HOST</code>/<code>EMAIL_FROM</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="llm-and-embeddings">LLM and embeddings<a class="headerlink" href="#llm-and-embeddings" title="Permanent link">&para;</a></h2>
-<p>Three ways to get an <code>LLMProvider</code>, checked in this order by
-<code>packages/providers/registry.py</code>'s <code>build_llm_provider</code> — see
-<a href="components/providers.md">Components → Providers</a> for the full precedence logic:</p>
+<p><strong>BYO-LLM can remove vendor LLM/embedding egress</strong> — point both generation and embedding
+configuration at endpoints inside your network. The custom endpoint path is implemented today;
+it does not remove search-query egress. See the
+<a href="../handbook/configuration.html">configuration reference</a>.</p>
+<h2 id="the-gap-thats-easy-to-miss-query-egress">The gap that's easy to miss: query egress<a class="headerlink" href="#the-gap-thats-easy-to-miss-query-egress" title="Permanent link">&para;</a></h2>
+<p>BYO-LLM does <strong>not</strong> remove the prior-art search egress. Every search query in the fan-out is
+built from a disclosure's own novel elements — the confidential, pre-filing substance of the
+invention — and sent as a plaintext query string to whichever external search APIs are
+configured, on every pipeline run. This is exactly the kind of thing a security review is
+designed to catch, and BYO-cloud alone doesn't close it.</p>
+<p>The mitigation is the <strong>local prior-art corpus</strong>: a Postgres full-text-search mirror
+(<code>corpus_papers</code>) that joins the fan-out without leaving your network. It's opt-in
+(<code>LOCAL_CORPUS_SEARCH=1</code>) and, as of today, covers arXiv — populated and kept current by an
+OAI-PMH sync job you run on a schedule (daily cron is the intended pattern; upserts are
+idempotent, so an overlapping sync window is safe):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>patent_triage_providers.search.arxiv_sync<span class="w"> </span>--set<span class="w"> </span>cs<span class="w"> </span>--days<span class="w"> </span><span class="m">7</span>
+</code></pre></div>
+<p><strong>Current state</strong>: additive, not a replacement — it joins the external search APIs in the
+fan-out rather than replacing them, so query egress is reduced, not eliminated, until the
+external providers are explicitly turned off. Full replacement (zero query egress) is the bar
+for the fully air-gapped tier; PatentsView bulk data is next on the roadmap since patents are the
+core prior-art source for this use case, arXiv being a proof of concept. If zero query egress is a
+hard requirement, the current registry needs one more engineering control before deployment:
+keyless live arXiv is enabled by default, and anonymous Semantic Scholar is enabled unless
+explicitly disabled. Leaving credentials unset is therefore <strong>not</strong> a local-only switch. The
+roadmap tracks a fail-closed local-only profile and an egress-denied test; see
+<a href="fully-local.html">Fully local deployment</a>.</p>
+<h2 id="trust-surface-by-tier">Trust surface, by tier<a class="headerlink" href="#trust-surface-by-tier" title="Permanent link">&para;</a></h2>
+<p>This table distinguishes application controls from infrastructure controls. BYO-cloud and
+air-gapped entries describe customer responsibilities or target behavior; they are not claims
+that productized packages for those tiers ship today.</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Effect</th>
+<th>Control</th>
+<th>SaaS</th>
+<th>BYO-cloud</th>
+<th>Air-gapped</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>ANTHROPIC_API_KEY</code></td>
-<td>default backend: Anthropic direct</td>
+<td>Data residency</td>
+<td>Selected hosted infrastructure</td>
+<td>Your selected cloud account and region</td>
+<td>Target: your network only</td>
 </tr>
 <tr>
-<td><code>VOYAGE_API_KEY</code></td>
-<td>default embeddings backend</td>
+<td>Encryption at rest/in transit</td>
+<td>Deployment responsibility; TLS termination and encrypted storage are not supplied by application code</td>
+<td>Your infrastructure responsibility</td>
+<td>Your infrastructure responsibility</td>
 </tr>
 <tr>
-<td><code>VOYAGE_REQUESTS_PER_MINUTE</code>, <code>VOYAGE_MAX_BATCH_SIZE</code>, <code>VOYAGE_MAX_TOKENS_PER_BATCH</code></td>
-<td>override Voyage's conservative free-tier pacing once a payment method is on file</td>
+<td>Application audit log</td>
+<td><code>audit_log</code> records decisions and pipeline state transitions</td>
+<td>Same application control</td>
+<td>Same application control</td>
 </tr>
 <tr>
-<td><code>OPENROUTER_API_KEY</code></td>
-<td>routes reasoner/worker calls through OpenRouter instead</td>
+<td>LLM egress</td>
+<td>To configured hosted providers</td>
+<td>To your chosen provider or internal endpoint</td>
+<td>Target: none, using a self-hosted endpoint</td>
 </tr>
 <tr>
-<td><code>OPENROUTER_REASONER_MODEL</code>, <code>OPENROUTER_WORKER_MODEL</code></td>
-<td>required alongside the key above — exact model slugs are never guessed; either may be a comma-separated fallback chain</td>
+<td>Search query egress</td>
+<td>To external search APIs</td>
+<td>Same; local corpus is currently additive</td>
+<td>Target: none after local corpus replaces every live provider</td>
 </tr>
 <tr>
-<td><code>OPENROUTER_EMBEDDING_MODEL</code></td>
-<td>opts embeddings into OpenRouter too (not triggered by <code>OPENROUTER_API_KEY</code> alone)</td>
-</tr>
-<tr>
-<td><code>LLM_BASE_URL</code></td>
-<td><strong>BYO-LLM</strong> — takes precedence over everything above; points the OpenAI-compatible client at your own endpoint (self-hosted vLLM, Azure/Bedrock gateway)</td>
-</tr>
-<tr>
-<td><code>LLM_REASONER_MODEL</code>, <code>LLM_WORKER_MODEL</code></td>
-<td>required alongside <code>LLM_BASE_URL</code></td>
-</tr>
-<tr>
-<td><code>LLM_API_KEY</code></td>
-<td>optional — unauthenticated internal endpoints send no <code>Authorization</code> header at all if unset, rather than a dangling credential</td>
-</tr>
-<tr>
-<td><code>LLM_EMBEDDING_MODEL</code>, <code>LLM_EMBEDDING_BASE_URL</code></td>
-<td>BYO-LLM for embeddings; falls back to <code>LLM_BASE_URL</code> if the base URL isn't given separately</td>
+<td>SOC 2 / pen test</td>
+<td>Planned, follows first committed customer</td>
+<td>Same</td>
+<td>Same</td>
 </tr>
 </tbody>
 </table>
-<h2 id="search-providers">Search providers<a class="headerlink" href="#search-providers" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>—</td>
-<td>arXiv and Semantic Scholar work with no key; Semantic Scholar's anonymous tier is aggressively rate-limited, a free key gets a dedicated 1 RPS</td>
-</tr>
-<tr>
-<td><code>SEMANTIC_SCHOLAR_API_KEY</code></td>
-<td>recommended — removes anonymous-tier throttling</td>
-</tr>
-<tr>
-<td><code>PATENTSVIEW_API_KEY</code></td>
-<td>adds PatentsView to the fan-out</td>
-</tr>
-<tr>
-<td><code>EPO_OPS_CONSUMER_KEY</code>, <code>EPO_OPS_CONSUMER_SECRET</code></td>
-<td>adds EPO OPS</td>
-</tr>
-<tr>
-<td><code>ENABLE_GOOGLE_PATENTS_SEARCH</code></td>
-<td>opt-in — unofficial, unverified endpoint</td>
-</tr>
-<tr>
-<td><code>LOCAL_CORPUS_SEARCH</code></td>
-<td>adds <code>LocalCorpusSearchProvider</code> (Postgres FTS over <code>corpus_papers</code>) to the fan-out; requires the corpus to be populated via <code>arxiv_sync</code> first — see <a href="components/providers.md">Components → Providers</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>—</td>
-<td>unset <code>SMTP_HOST</code> = emails only logged (<code>LoggingEmailSender</code>), not sent — every flow works without real delivery</td>
-</tr>
-<tr>
-<td><code>SMTP_HOST</code>, <code>EMAIL_FROM</code></td>
-<td>required together to enable <code>SmtpEmailSender</code></td>
-</tr>
-<tr>
-<td><code>SMTP_PORT</code></td>
-<td>default 587</td>
-</tr>
-<tr>
-<td><code>SMTP_USERNAME</code>, <code>SMTP_PASSWORD</code></td>
-<td>optional — an internal relay may need no auth</td>
-</tr>
-<tr>
-<td><code>SMTP_STARTTLS</code></td>
-<td>set to <code>0</code> to disable STARTTLS (internal port-25 relays)</td>
-</tr>
-<tr>
-<td><code>SMTP_TLS</code></td>
-<td>set to <code>1</code> for implicit TLS (port-465 style)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sso-oidc">SSO (OIDC)<a class="headerlink" href="#sso-oidc" title="Permanent link">&para;</a></h2>
-<p>Per-org configuration lives in the <code>org_sso_config</code> table, not env vars (<a href="../../adr/0012-oidc-sso/">ADR 0012</a>) — an org admin sets it via <code>PUT /org/sso-config</code>. This is the one process-wide setting SSO needs:</p>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>PUBLIC_APP_BASE_URL</code></td>
-<td>required if any org has SSO configured — the absolute, single-origin base URL this deployment is reachable at, used to build the OIDC <code>redirect_uri</code> and the post-login redirect back into the app</td>
-</tr>
-</tbody>
-</table>
-<h2 id="observability">Observability<a class="headerlink" href="#observability" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>OTEL_EXPORTER_OTLP_ENDPOINT</code></td>
-<td>unset = telemetry is a complete no-op; set = real metrics export over OTLP/HTTP every 15s. See <a href="workflows/observability.md">Workflows → Observability</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="standalone-image-only">Standalone image only<a class="headerlink" href="#standalone-image-only" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>RUN_WORKER_IN_PROCESS</code></td>
-<td>runs the worker loop as a background task inside the API process instead of a separate <code>services/worker</code> process</td>
-</tr>
-<tr>
-<td><code>WEB_DIST_DIR</code>, <code>PGDATA</code>, <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code>, <code>POSTGRES_DB</code></td>
-<td>set by the Dockerfile itself; see <a href="deployment.md#standalone">Deployment → Standalone</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="other">Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>MIGRATIONS_DIR</code></td>
-<td>override where <code>run_migrations</code> looks for <code>.sql</code> files (defaults to <code>deploy/migrations</code>)</td>
-</tr>
-</tbody>
-</table>
+<p>The output itself is structured, throughout the product, as <strong>decision support, never a legal
+opinion</strong> — a human review committee makes the actual call
+(<a href="../adr/0004-triage-score-not-legal-opinion.html">ADR 0004</a>). That framing matters for your own
+internal sign-off as much as it does for UPL positioning: nothing in any tier is designed to make
+an autonomous patentability determination.</p>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../handbook/configuration.html">Configuration reference</a> for every environment variable
+  mentioned above.</li>
+<li><a href="fully-local.html">Fully local deployment</a> for the remaining work required to prove no-egress
+  operation.</li>
+</ul>
 
 
 
@@ -1286,10 +1113,10 @@ need; this page explains the <em>why</em> behind each group.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

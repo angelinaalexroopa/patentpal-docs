@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://angelinaalexroopa.github.io/patentpal-docs/deploy-guide/">
+      
+        <link rel="prev" href="../customer-home.html">
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="standalone/">
+        <link rel="next" href="standalone.html">
       
       
         
@@ -225,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../customer-home.html" class="md-tabs__link">
         
   
   
@@ -248,7 +246,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -268,7 +266,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../handbook/configuration/" class="md-tabs__link">
+      <a href="../handbook/configuration.html" class="md-tabs__link">
         
   
   
@@ -289,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../adr/0004-triage-score-not-legal-opinion/" class="md-tabs__link">
+        <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-tabs__link">
           
   
   
@@ -355,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../customer-home.html" class="md-nav__link">
         
   
   
@@ -418,7 +416,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="index.html" class="md-nav__link md-nav__link--active">
               
   
   
@@ -462,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="standalone/" class="md-nav__link">
+      <a href="standalone.html" class="md-nav__link">
         
   
   
@@ -490,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="compose-and-kubernetes/" class="md-nav__link">
+      <a href="compose-and-kubernetes.html" class="md-nav__link">
         
   
   
@@ -518,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="fully-local/" class="md-nav__link">
+      <a href="fully-local.html" class="md-nav__link">
         
   
   
@@ -546,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-flow-and-security/" class="md-nav__link">
+      <a href="data-flow-and-security.html" class="md-nav__link">
         
   
   
@@ -581,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../handbook/configuration/" class="md-nav__link">
+      <a href="../handbook/configuration.html" class="md-nav__link">
         
   
   
@@ -668,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/0004-triage-score-not-legal-opinion/" class="md-nav__link">
+      <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-nav__link">
         
   
   
@@ -696,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/0009-standalone-first-packaging/" class="md-nav__link">
+      <a href="../adr/0009-standalone-first-packaging.html" class="md-nav__link">
         
   
   
@@ -724,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/0012-oidc-sso/" class="md-nav__link">
+      <a href="../adr/0012-oidc-sso.html" class="md-nav__link">
         
   
   
@@ -833,11 +831,11 @@
 
 <h1 id="deploying-patent-triage">Deploying patent-triage<a class="headerlink" href="#deploying-patent-triage" title="Permanent link">&para;</a></h1>
 <p>This guide is for a customer's platform, security, or IT team evaluating how to run patent-triage
-in your own environment — not for engineers working on this codebase (that's the
-<a href="../handbook/index.md">engineering handbook</a>). It answers three questions: which tier fits you,
-what you need to provide, and how to stand each one up.</p>
+in your own environment. It answers three questions: which tier fits you, what you need to
+provide, and which installation paths exist today. Engineers with source-repository access have a
+separate internal handbook.</p>
 <p>Disclosures are pre-filing IP. Every tier below is designed around that: the software runs on the
-same codebase everywhere (<a href="../adr/0009-standalone-first-packaging/">ADR 0009</a>), and moving to a
+same codebase everywhere (<a href="../adr/0009-standalone-first-packaging.html">ADR 0009</a>), and moving to a
 tier with a stronger trust story is a configuration change, never a rewrite or a fork.</p>
 <h2 id="choose-a-tier">Choose a tier<a class="headerlink" href="#choose-a-tier" title="Permanent link">&para;</a></h2>
 <table>
@@ -851,29 +849,30 @@ tier with a stronger trust story is a configuration change, never a rewrite or a
 </thead>
 <tbody>
 <tr>
-<td><strong>SaaS</strong></td>
+<td><strong>SaaS target</strong></td>
 <td>We host it, multi-tenant</td>
-<td>DPA + SOC 2 + subprocessor list</td>
-<td>Our infrastructure, plus whichever LLM/search subprocessors are in the DPA</td>
+<td>DPA, subprocessor disclosure, and planned SOC 2 controls</td>
+<td>Our infrastructure plus configured LLM/search subprocessors</td>
 </tr>
 <tr>
-<td><strong>BYO-cloud</strong> <em>(recommended starting point)</em></td>
-<td>Our software, deployed into your cloud account; your LLM tenancy</td>
-<td>"Your data never touches us," at roughly 30% of air-gap cost</td>
-<td>Your cloud account; your LLM provider</td>
+<td><strong>BYO-cloud target</strong> <em>(recommended after a pilot)</em></td>
+<td>Our software in your cloud account; your LLM tenancy</td>
+<td>Infrastructure stays in your account; configured LLM and search providers still receive requests</td>
+<td>Your cloud account and the subprocessors you configure</td>
 </tr>
 <tr>
-<td><strong>Private / air-gapped</strong></td>
-<td>Fully on-prem bundle, no outbound dependency</td>
-<td>Complete isolation</td>
-<td>Nowhere — no network egress required</td>
+<td><strong>Private / air-gapped target</strong></td>
+<td>Fully on-prem bundle with no outbound dependency</td>
+<td>Complete isolation once the no-egress bundle is implemented and verified</td>
+<td>Nowhere outside your network</td>
 </tr>
 </tbody>
 </table>
-<p>Recommended sequencing for a first pilot: <strong>SaaS pilot → BYO-cloud → air-gap only once a funded
-deployment specifically requires it.</strong> Air-gap is the most expensive tier to operate and support,
-and most of its trust benefits are already available from BYO-cloud once you also enable the
-local prior-art corpus (see <a href="data-flow-and-security/">Data flow &amp; security</a>).</p>
+<p>Recommended sequencing: <strong>standalone/SaaS pilot → productized BYO-cloud → air-gap only once a
+funded deployment specifically requires it.</strong> Only the standalone artifact is productized today.
+Air-gap is the most expensive tier to operate and support, and the current local corpus is an
+arXiv proof of concept rather than a patent-complete no-egress bundle. See
+<a href="data-flow-and-security.html">Data flow &amp; security</a>.</p>
 <h2 id="what-youll-need-to-provide">What you'll need to provide<a class="headerlink" href="#what-youll-need-to-provide" title="Permanent link">&para;</a></h2>
 <p>Every tier needs the same things; only <em>where they come from</em> changes.</p>
 <table>
@@ -917,32 +916,32 @@ local prior-art corpus (see <a href="data-flow-and-security/">Data flow &amp; se
 <td>Embedded Postgres, no external dependency</td>
 </tr>
 <tr>
-<td><strong>SSO</strong> <em>(optional; <a href="../adr/0012-oidc-sso/">ADR 0012</a>)</em></td>
+<td><strong>SSO</strong> <em>(optional; <a href="../adr/0012-oidc-sso.html">ADR 0012</a>)</em></td>
 <td>We configure it if requested</td>
 <td><code>PUBLIC_APP_BASE_URL</code> set to your deployment's single reachable origin, plus your IdP's issuer/client ID/secret — entered once by an org admin in-app (Org → Single sign-on), not an env var</td>
 <td>Same as BYO-cloud, pointed at an internal IdP if you have one</td>
 </tr>
 </tbody>
 </table>
-<p>Password login works out of the box with nothing beyond the session signing secret — SSO is
-additive, not a prerequisite. None of the above requires code changes — every one is either an
-environment variable read once at startup or, for SSO specifically, in-app admin configuration.
-See <a href="../handbook/configuration/">Configuration reference</a> for the full env var list, or jump
-straight to a specific path:</p>
+<p>Password login works with a session signing secret; SSO is additive. The standalone path accepts
+the documented settings without code changes. The local development Compose file forwards only
+the variables explicitly listed in it, and the planned private tiers still require packaging and
+no-egress engineering. See <a href="../handbook/configuration.html">Configuration reference</a> for the full
+env var list, or jump to a specific path:</p>
 <ul>
-<li><strong><a href="standalone/">Standalone quickstart</a></strong> — one container, fastest way to a working pilot.</li>
-<li><strong><a href="compose-and-kubernetes/">Compose &amp; Kubernetes</a></strong> — multi-container and Helm paths for
-  production-shaped deployments.</li>
-<li><strong><a href="data-flow-and-security/">Data flow &amp; security</a></strong> — what leaves your network, per tier, and
+<li><strong><a href="standalone.html">Standalone quickstart</a></strong> — one container, fastest way to a working pilot.</li>
+<li><strong><a href="compose-and-kubernetes.html">Compose &amp; Kubernetes</a></strong> — the working development topology,
+  current placeholders, and the intended production shape.</li>
+<li><strong><a href="data-flow-and-security.html">Data flow &amp; security</a></strong> — what leaves your network, per tier, and
   how to close the gaps that matter most to a security review.</li>
-<li><strong><a href="fully-local/">Fully local deployment</a></strong> — the local LLM/corpus target, known gaps,
+<li><strong><a href="fully-local.html">Fully local deployment</a></strong> — the local LLM/corpus target, known gaps,
   one-machine experiment, and measured cost break-even method.</li>
 </ul>
 <h2 id="current-state-honestly">Current state, honestly<a class="headerlink" href="#current-state-honestly" title="Permanent link">&para;</a></h2>
 <p>The <strong>standalone single-container image is the only fully productized artifact today</strong> — build
 it, run it, everything (embedded Postgres, in-process worker, the web app) is in one container.
 The <code>deploy/compose/</code> and <code>deploy/helm/</code> packaging layers referenced in the roadmap are placeholders
-right now; see <a href="compose-and-kubernetes/">Compose &amp; Kubernetes</a> for what that means in practice
+right now; see <a href="compose-and-kubernetes.html">Compose &amp; Kubernetes</a> for what that means in practice
 and what to use in the meantime. If your evaluation depends on Kubernetes packaging on a specific
 timeline, raise it — it's a known, tracked gap, not an oversight.</p>
 

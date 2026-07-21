@@ -10,29 +10,29 @@
       
       
       
-        <link rel="canonical" href="https://angelinaalexroopa.github.io/patentpal-docs/">
+      
+        <link rel="prev" href="standalone.html">
       
       
-      
-        <link rel="next" href="deploy-guide/">
+        <link rel="next" href="fully-local.html">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>PatentPal — Customer Docs</title>
+        <title>Compose & Kubernetes - PatentPal — Customer Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#patentpal-customer-documentation" class="md-skip">
+        <a href="#compose-kubernetes" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Compose & Kubernetes
             
           </span>
         </div>
@@ -221,11 +221,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../customer-home.html" class="md-tabs__link">
         
   
   
@@ -242,11 +240,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="deploy-guide/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -266,7 +266,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="handbook/configuration/" class="md-tabs__link">
+      <a href="../handbook/configuration.html" class="md-tabs__link">
         
   
   
@@ -287,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="adr/0004-triage-score-not-legal-opinion/" class="md-tabs__link">
+        <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -350,6 +350,141 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../customer-home.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploying PatentPal
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deploying PatentPal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="standalone.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standalone quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -369,7 +504,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Compose & Kubernetes
   
 
     
@@ -380,14 +515,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="compose-and-kubernetes.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Home
+    Compose & Kubernetes
   
 
     
@@ -413,10 +548,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#where-to-start" class="md-nav__link">
+  <a href="#multi-container-compose" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Where to start
+        Multi-container (Compose)
       
     </span>
   </a>
@@ -424,10 +559,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment-tiers-at-a-glance" class="md-nav__link">
+  <a href="#kubernetes-helm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deployment tiers at a glance
+        Kubernetes (Helm)
       
     </span>
   </a>
@@ -435,10 +570,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contact-support" class="md-nav__link">
+  <a href="#what-production-shaped-will-mean-once-built" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Contact &amp; support
+        What "production-shaped" will mean once built
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
       
     </span>
   </a>
@@ -452,80 +598,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="deploy-guide/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Deploying PatentPal
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Deploying PatentPal
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
             
               
@@ -535,63 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="deploy-guide/standalone/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Standalone quickstart
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="deploy-guide/compose-and-kubernetes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Compose & Kubernetes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="deploy-guide/fully-local/" class="md-nav__link">
+      <a href="fully-local.html" class="md-nav__link">
         
   
   
@@ -619,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="deploy-guide/data-flow-and-security/" class="md-nav__link">
+      <a href="data-flow-and-security.html" class="md-nav__link">
         
   
   
@@ -654,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="handbook/configuration/" class="md-nav__link">
+      <a href="../handbook/configuration.html" class="md-nav__link">
         
   
   
@@ -741,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="adr/0004-triage-score-not-legal-opinion/" class="md-nav__link">
+      <a href="../adr/0004-triage-score-not-legal-opinion.html" class="md-nav__link">
         
   
   
@@ -769,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="adr/0009-standalone-first-packaging/" class="md-nav__link">
+      <a href="../adr/0009-standalone-first-packaging.html" class="md-nav__link">
         
   
   
@@ -797,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="adr/0012-oidc-sso/" class="md-nav__link">
+      <a href="../adr/0012-oidc-sso.html" class="md-nav__link">
         
   
   
@@ -852,10 +868,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#where-to-start" class="md-nav__link">
+  <a href="#multi-container-compose" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Where to start
+        Multi-container (Compose)
       
     </span>
   </a>
@@ -863,10 +879,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment-tiers-at-a-glance" class="md-nav__link">
+  <a href="#kubernetes-helm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deployment tiers at a glance
+        Kubernetes (Helm)
       
     </span>
   </a>
@@ -874,10 +890,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contact-support" class="md-nav__link">
+  <a href="#what-production-shaped-will-mean-once-built" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Contact &amp; support
+        What "production-shaped" will mean once built
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
       
     </span>
   </a>
@@ -904,50 +931,60 @@
   
 
 
-<h1 id="patentpal-customer-documentation">PatentPal — Customer Documentation<a class="headerlink" href="#patentpal-customer-documentation" title="Permanent link">&para;</a></h1>
-<p>PatentPal is an invention-disclosure triage system: engineers submit disclosures, and PatentPal
-produces an evidence-grounded <strong>patentability triage report</strong> — a calibrated score,
-per-dimension legal reasoning (§101/§102/§103), cited prior art, and a routing recommendation.
-A human review committee makes the final call. <strong>Decision support, never a legal opinion.</strong></p>
-<h2 id="where-to-start">Where to start<a class="headerlink" href="#where-to-start" title="Permanent link">&para;</a></h2>
+<h1 id="compose-kubernetes">Compose &amp; Kubernetes<a class="headerlink" href="#compose-kubernetes" title="Permanent link">&para;</a></h1>
+<p>For anything beyond a single-container pilot — separate API/worker scaling, an external managed
+Postgres, or a Kubernetes-native rollout.</p>
+<div class="admonition note">
+<p class="admonition-title">The productized packaging for these paths isn't built yet</p>
+<p><code>deploy/compose/</code> and <code>deploy/helm/</code> exist as placeholders in the repo today — the actual
+multi-container compose file and Helm chart are on the roadmap under "Private-deployment
+additions," not yet implemented. What follows is the current, honest state of each path: what
+exists, what you'd build on top of it, and what's still open.</p>
+</div>
+<h2 id="multi-container-compose">Multi-container (Compose)<a class="headerlink" href="#multi-container-compose" title="Permanent link">&para;</a></h2>
+<p>The root <a href="https://github.com/rnalex/ip-workflow/blob/main/docker-compose.yml"><code>docker-compose.yml</code></a>
+is this project's own <strong>development</strong> setup — <code>api</code>, <code>worker</code>, <code>db</code>, and <code>otel-lgtm</code> as separate
+containers against an external (not embedded) Postgres:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env.local
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>--env-file<span class="w"> </span>.env.local<span class="w"> </span>up<span class="w"> </span>--build
+</code></pre></div>
+<p>It's a real, working multi-container topology, and everything in it (the API image, the worker
+image, the migration-on-startup behavior) is the same code the standalone image and any future
+production compose packaging would use — but it isn't hardened or documented as a production
+artifact (no resource limits, no restart policies tuned for production, dev-oriented defaults
+throughout). Treat it as a reference for the shape a production compose file would take, not as
+something to point at customer traffic directly.</p>
+<p><code>deploy/compose/</code> is meant to hold the separate, productized version of this — layered on the
+standalone image rather than built from source, with production-appropriate defaults. It's a
+placeholder today.</p>
+<h2 id="kubernetes-helm">Kubernetes (Helm)<a class="headerlink" href="#kubernetes-helm" title="Permanent link">&para;</a></h2>
+<p><code>deploy/helm/</code> is meant to hold the chart for private/air-gapped tiers, including the fully
+air-gapped bundle: a signed OCI archive with images, model weights, and the prior-art corpus,
+sized so a platform team can install it in a day per the roadmap's target. It's a placeholder
+today — no chart exists yet.</p>
+<p>If a Kubernetes deployment is a requirement for your evaluation now, the standalone image is
+still deployable as a single-replica Deployment with a PersistentVolumeClaim for
+<code>/var/lib/postgresql/standalone-data</code> in the interim, at the same single-worker throughput ceiling
+described in the <a href="standalone.html#sizing">standalone guide</a>. This isn't a substitute for the
+planned chart (no external managed-Postgres story, no horizontal worker scaling), but it's a
+reasonable bridge for a pilot.</p>
+<h2 id="what-production-shaped-will-mean-once-built">What "production-shaped" will mean once built<a class="headerlink" href="#what-production-shaped-will-mean-once-built" title="Permanent link">&para;</a></h2>
+<p>Per the roadmap, so you know what to expect and can plan around it:</p>
 <ul>
-<li><strong><a href="deploy-guide/">Deploying PatentPal</a></strong> — evaluating which deployment tier fits your
-  organization (SaaS, BYO-cloud, or air-gapped)? Start here. Includes quickstarts for each tier.</li>
-<li><strong><a href="handbook/configuration/">Configuration reference</a></strong> — full list of environment variables
-  and what each one controls.</li>
-<li><strong><a href="deploy-guide/data-flow-and-security/">Data flow &amp; security</a></strong> — where data lives, what
-  leaves your network, and what controls are available per tier.</li>
+<li>External managed Postgres rather than embedded, for the same reasons any production Postgres
+  workload wants a managed instance (backups, PITR, connection pooling at scale).</li>
+<li>API and worker scaled independently — the API is stateless HTTP, the worker is a
+  <code>FOR UPDATE SKIP LOCKED</code> polling loop that can safely run multiple replicas.</li>
+<li>Signed license keys (features/seats/expiry) and versioned releases with automated migrations
+  for the private-deployment tiers.</li>
+<li>A diagnostics bundle (sanitized, never disclosure content) for support without requiring log
+  access to customer infrastructure.</li>
 </ul>
-<h2 id="deployment-tiers-at-a-glance">Deployment tiers at a glance<a class="headerlink" href="#deployment-tiers-at-a-glance" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Tier</th>
-<th>Who hosts it</th>
-<th>Data boundary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>SaaS</strong></td>
-<td>PatentPal hosts, multi-tenant</td>
-<td>PatentPal infrastructure + LLM/search subprocessors listed in DPA</td>
-</tr>
-<tr>
-<td><strong>BYO-cloud</strong> <em>(recommended start)</em></td>
-<td>Our software, your cloud account</td>
-<td>Your cloud account; your LLM provider</td>
-</tr>
-<tr>
-<td><strong>Air-gapped</strong></td>
-<td>Fully on-prem, no outbound</td>
-<td>Nowhere — no network egress required</td>
-</tr>
-</tbody>
-</table>
-<h2 id="contact-support">Contact &amp; support<a class="headerlink" href="#contact-support" title="Permanent link">&para;</a></h2>
-<p>To start a pilot or request a security questionnaire, contact us at
-<strong><a href="mailto:hello@patentpal.io">hello@patentpal.io</a></strong> (placeholder — update before publishing).</p>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="data-flow-and-security.html">Data flow &amp; security</a> for the egress picture that matters most for
+  a Kubernetes/air-gap evaluation.</li>
+</ul>
 
 
 
@@ -1003,10 +1040,10 @@ A human review committee makes the final call. <strong>Decision support, never a
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

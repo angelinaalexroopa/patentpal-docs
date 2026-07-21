@@ -10,31 +10,29 @@
       
       
       
-        <link rel="canonical" href="https://angelinaalexroopa.github.io/patentpal-docs/deploy-guide/fully-local/">
+      
+        <link rel="prev" href="0004-triage-score-not-legal-opinion.html">
       
       
-        <link rel="prev" href="../compose-and-kubernetes/">
-      
-      
-        <link rel="next" href="../data-flow-and-security/">
+        <link rel="next" href="0012-oidc-sso.html">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Fully local (air-gapped) - PatentPal — Customer Docs</title>
+        <title>Standalone-first packaging (ADR 0009) - PatentPal — Customer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fully-local-inference-and-prior-art-search" class="md-skip">
+        <a href="#9-standalone-first-packaging" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-header__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fully local (air-gapped)
+              Standalone-first packaging (ADR 0009)
             
           </span>
         </div>
@@ -225,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../customer-home.html" class="md-tabs__link">
         
   
   
@@ -242,13 +240,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../deploy-guide/index.html" class="md-tabs__link">
           
   
   
@@ -268,7 +264,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../handbook/configuration/" class="md-tabs__link">
+      <a href="../handbook/configuration.html" class="md-tabs__link">
         
   
   
@@ -285,11 +281,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../adr/0004-triage-score-not-legal-opinion/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="0004-triage-score-not-legal-opinion.html" class="md-tabs__link">
           
   
   
@@ -325,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
+    <a href=".." title="PatentPal — Customer Docs" class="md-nav__button md-logo" aria-label="PatentPal — Customer Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -355,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../customer-home.html" class="md-nav__link">
         
   
   
@@ -379,8 +377,6 @@
       
   
   
-    
-  
   
   
     
@@ -402,23 +398,20 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../deploy-guide/index.html" class="md-nav__link ">
               
   
   
@@ -436,13 +429,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -462,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../standalone/" class="md-nav__link">
+      <a href="../deploy-guide/standalone.html" class="md-nav__link">
         
   
   
@@ -490,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compose-and-kubernetes/" class="md-nav__link">
+      <a href="../deploy-guide/compose-and-kubernetes.html" class="md-nav__link">
         
   
   
@@ -498,6 +491,189 @@
     
   
     Compose & Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy-guide/fully-local.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fully local (air-gapped)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy-guide/data-flow-and-security.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data flow & security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handbook/configuration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture decisions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture decisions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0004-triage-score-not-legal-opinion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Not a legal opinion (ADR 0004)
   
 
     
@@ -534,7 +710,7 @@
   <span class="md-ellipsis">
     
   
-    Fully local (air-gapped)
+    Standalone-first packaging (ADR 0009)
   
 
     
@@ -545,14 +721,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="0009-standalone-first-packaging.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Fully local (air-gapped)
+    Standalone-first packaging (ADR 0009)
   
 
     
@@ -578,10 +754,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-works-today" class="md-nav__link">
+  <a href="#status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What works today
+        Status
       
     </span>
   </a>
@@ -589,10 +765,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#current-gaps-before-calling-it-local-only" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Current gaps before calling it local-only
+        Context
       
     </span>
   </a>
@@ -600,10 +776,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-practical-one-machine-experiment" class="md-nav__link">
+  <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A practical one-machine experiment
+        Decision
       
     </span>
   </a>
@@ -611,21 +787,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-and-break-even" class="md-nav__link">
+  <a href="#consequences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost and break-even
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implementation-and-evaluation-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implementation and evaluation checklist
+        Consequences
       
     </span>
   </a>
@@ -648,185 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-flow-and-security/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Data flow & security
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../handbook/configuration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Configuration reference
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture decisions
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Architecture decisions
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/0004-triage-score-not-legal-opinion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Not a legal opinion (ADR 0004)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/0009-standalone-first-packaging/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Standalone-first packaging (ADR 0009)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/0012-oidc-sso/" class="md-nav__link">
+      <a href="0012-oidc-sso.html" class="md-nav__link">
         
   
   
@@ -881,10 +868,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-works-today" class="md-nav__link">
+  <a href="#status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What works today
+        Status
       
     </span>
   </a>
@@ -892,10 +879,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#current-gaps-before-calling-it-local-only" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Current gaps before calling it local-only
+        Context
       
     </span>
   </a>
@@ -903,10 +890,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-practical-one-machine-experiment" class="md-nav__link">
+  <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A practical one-machine experiment
+        Decision
       
     </span>
   </a>
@@ -914,21 +901,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-and-break-even" class="md-nav__link">
+  <a href="#consequences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost and break-even
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implementation-and-evaluation-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implementation and evaluation checklist
+        Consequences
       
     </span>
   </a>
@@ -955,92 +931,23 @@
   
 
 
-<h1 id="fully-local-inference-and-prior-art-search">Fully local inference and prior-art search<a class="headerlink" href="#fully-local-inference-and-prior-art-search" title="Permanent link">&para;</a></h1>
-<p>This is the handoff plan for running the complete decision-support path inside one controlled
-network: application, LLM, embeddings, patent and scholarly indexes, and database. It is a target
-private-deployment profile, <strong>not a claim that the current build is air-gapped</strong>.</p>
-<h2 id="what-works-today">What works today<a class="headerlink" href="#what-works-today" title="Permanent link">&para;</a></h2>
-<p>The application already speaks OpenAI-compatible APIs. A local vLLM service can therefore replace
-hosted generation and embeddings without changing pipeline code:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>LLM_BASE_URL=http://local-llm:8000/v1
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>LLM_REASONER_MODEL=&lt;served-model-name&gt;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>LLM_WORKER_MODEL=&lt;served-model-name&gt;
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>LLM_API_KEY=
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>LLM_EMBEDDING_BASE_URL=http://local-embeddings:8001/v1
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>LLM_EMBEDDING_MODEL=&lt;served-embedding-model-name&gt;
-</code></pre></div>
-<p>The arXiv corpus proof of concept can be synchronized into Postgres and searched with
-<code>LOCAL_CORPUS_SEARCH=1</code>. This proves the provider shape, incremental ingestion, and local lexical
-retrieval. It does not yet provide a patent-complete corpus.</p>
-<h2 id="current-gaps-before-calling-it-local-only">Current gaps before calling it local-only<a class="headerlink" href="#current-gaps-before-calling-it-local-only" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>build_search_providers()</code> always includes keyless live arXiv and includes live Semantic Scholar
-  unless explicitly disabled. <code>LOCAL_CORPUS_SEARCH=1</code> adds a source; it does not replace the live
-  fan-out. An explicit allowlist/profile such as <code>SEARCH_PROFILE=local-only</code> is required, with a
-  startup failure if no local corpus is available.</li>
-<li>Patent bulk ingestion is not implemented. Add PatentsView applications, grants, claims, long
-  descriptions, citations, families and legal-status data before judging patent retrieval.</li>
-<li>Postgres FTS is only the first retrieval stage. Measure lexical, vector, and hybrid recall@K on
-  reviewed patent queries before selecting an index architecture.</li>
-<li>The release bundle needs pinned model weights, tokenizer/config, corpus snapshot, migrations,
-  licenses, checksums, storage sizing, incremental update media, and backup/restore instructions.</li>
-<li>Add an egress-denied integration test and content-free freshness/capacity metrics. An environment
-  variable alone is not evidence of isolation.</li>
-</ul>
-<p>Public access to a dataset does not necessarily grant commercial redistribution. Record the
-license and provenance of every model and corpus component, and have counsel review the intended
-distribution mode (download-at-install versus redistribution in our bundle).</p>
-<h2 id="a-practical-one-machine-experiment">A practical one-machine experiment<a class="headerlink" href="#a-practical-one-machine-experiment" title="Permanent link">&para;</a></h2>
-<p>Do not start with the largest model names in the current hosted matrix. Mixture-of-experts “active
-parameter” counts describe compute per token, not how few weights must be stored; the full model
-still has to be resident across accelerator and host memory. Begin with a permissively licensed
-7B-32B instruction model quantized to 4 or 8 bits, served by vLLM on a Linux workstation with one
-24-48 GB GPU. Treat these as experiment bounds, not production sizing: long context, KV cache,
-concurrency, quantization format, and guided decoding all change memory use.</p>
-<p>Keep prompts small by retrieving a compact top-K evidence set rather than asking the model to hold
-the corpus in context. Start with one worker and low concurrency, record peak VRAM, tokens/second,
-queue time, power, and error/retry rates, then increase concurrency. Use a separate small local
-embedding service only when the retrieval evaluation needs semantic search; lexical retrieval is
-a valid first baseline.</p>
-<p>The experiment is successful only when the same eval command used for hosted candidates can point
-at the local endpoint and pass the quality, stability, structured-output, citation, and sensitive-
-data gates. Extend that harness with retrieval and end-to-end cases before making a product claim.</p>
-<h2 id="cost-and-break-even">Cost and break-even<a class="headerlink" href="#cost-and-break-even" title="Permanent link">&para;</a></h2>
-<p>Compare total cost, not API price against GPU purchase price:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>hosted/month = disclosures × hosted variable cost per disclosure
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>local/month = hardware amortization + power + storage + operations
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>              + local variable cost per disclosure
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>break-even disclosures/month = local fixed monthly cost
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  / (hosted variable cost/disclosure - local variable cost/disclosure)
-</code></pre></div>
-<p>Use a 36-month hardware life as a starting assumption and sensitivity-test utilization, electricity
-price, support time, replacement capacity, corpus storage/backup, and model-quality-driven human
-review. Idle GPU capacity is still a cost. If the local model causes more retries or weaker reports,
-the additional reviewer time can overwhelm inference savings.</p>
-<p>The first nine-case assessment smoke run spent less than half a cent per candidate on hosted model
-calls. That makes it unlikely that a dedicated GPU beats hosted inference on <strong>pure dollar cost at
-pilot volume</strong>. Local can still be the right choice for confidentiality, contractual no-egress,
-predictable capacity, or a GPU that is already owned and highly utilized. It becomes financially
-competitive as sustained workload rises, the hardware is shared across useful workloads, hosted
-models are materially more expensive, and the smaller model preserves quality.</p>
-<h2 id="implementation-and-evaluation-checklist">Implementation and evaluation checklist<a class="headerlink" href="#implementation-and-evaluation-checklist" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Add and test the fail-closed <code>local-only</code> search profile.</li>
-<li>Package one quantized model behind vLLM and verify schema-constrained responses.</li>
-<li>Run <code>assessment_v1</code>; record actual served model, peak VRAM, throughput, latency, power, retries,
-   and operator time alongside token/cost results.</li>
-<li>Implement PatentsView bulk ingestion, then benchmark retrieval recall before adding an arXiv or
-   Semantic Scholar subset.</li>
-<li>Run end-to-end reviewed cases against hosted and local stacks, blinded where possible.</li>
-<li>Fill in the break-even formula with measured values and test low/base/high utilization.</li>
-<li>Only then choose local, hosted, or a policy-controlled hybrid per pipeline role.</li>
-</ol>
-<p>Start with <a href="../handbook/components/providers.md">Components → Providers</a>, the
-<a href="../handbook/components/scoring-assess-evalharness.md">eval-harness handoff</a>, and the
-<a href="../superpowers/specs/2026-07-12-patentability-triage-roadmap.md">productization roadmap</a>.</p>
+<h1 id="9-standalone-first-packaging">9. Standalone-first packaging<a class="headerlink" href="#9-standalone-first-packaging" title="Permanent link">&para;</a></h1>
+<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
+<p>Accepted</p>
+<h2 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
+<p>Deployment targets range from a design-partner pilot (wants the least infrastructure possible)
+to enterprise air-gapped installs (wants a platform team to install it in a day via Helm).
+Designing for Helm first and retrofitting a lightweight mode tends to produce a lightweight mode
+that's lightweight in name only.</p>
+<h2 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h2>
+<p>Design standalone-first: a single container (embedded Postgres + in-process worker + statics),
+then compose, then Helm, as the same artifact configured differently — not separate builds. This
+forces a Postgres-only queue (no separate broker) and an embeddable worker. No single-binary
+target: the container is the artifact.</p>
+<h2 id="consequences">Consequences<a class="headerlink" href="#consequences" title="Permanent link">&para;</a></h2>
+<p>The pipeline orchestrator (Design &amp; Architecture, Components §2) must be built against a
+Postgres-backed queue from the start. Anything that can't run in a single container without
+external services either waits for the compose/Helm tiers or gets redesigned to fit.</p>
 
 
 
@@ -1096,10 +1003,10 @@ models are materially more expensive, and the smaller model preserves quality.</
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
